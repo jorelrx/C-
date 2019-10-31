@@ -10,13 +10,8 @@ namespace Ex05
     {
         private List<K> chaves = new List<K>();
         private List<V> valores = new List<V>();
-        public List<K> Chaves
-        {
-            get
-            {
-                return chaves;
-            }
-        }
+        public List<K> Chaves { get => chaves; }
+        public List<V> Valores { get => valores; }
         public int Count
         {
             get
@@ -68,5 +63,9 @@ namespace Ex05
             }
         }
         public bool Contains(K chave) => chaves.Contains(chave);
+        public override string ToString()
+        {
+            return $"Chave: {Chaves}\nValores: {Valores}";
+        }
     }
 }
