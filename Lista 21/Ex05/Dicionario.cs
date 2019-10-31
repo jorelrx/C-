@@ -57,15 +57,12 @@ namespace Ex05
             if (chaves.IndexOf(chave) == -1) return false;
             else
             {
-                chaves.RemoveAt(chaves.IndexOf(chave));
-                valores.RemoveAt(chaves.IndexOf(chave));
+                int indice = chaves.IndexOf(chave);
+                chaves.RemoveAt(indice);
+                valores.RemoveAt(indice);
                 return true;
             }
         }
         public bool Contains(K chave) => chaves.Contains(chave);
-        public override string ToString()
-        {
-            return $"Chave: {Chaves}\nValores: {Valores}";
-        }
     }
 }

@@ -5,17 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex05"
         mc:Ignorable="d"
-        Title="Dicionário" Height="450" Width="800">
+        Title="Dicionário" Height="450" Width="668.908">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="Chave" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="146,20,0,0" TextWrapping="Wrap" Text="Valor" VerticalAlignment="Top"/>
-        <TextBox x:Name="chave" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="valor" HorizontalAlignment="Left" Height="23" Margin="146,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="250" Margin="10,131,0,0" VerticalAlignment="Top" Width="550"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Add"/>
-        <Button Content="Clear" HorizontalAlignment="Left" Margin="277,90,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Clear"/>
-        <Button Content="Contains" HorizontalAlignment="Left" Margin="186,90,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Contains"/>
-        <Button Content="Remove" HorizontalAlignment="Left" Margin="98,90,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Remove"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,9,0,0" TextWrapping="Wrap" Text="Chave" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,58,0,0" TextWrapping="Wrap" Text="Valor" VerticalAlignment="Top"/>
+        <TextBox x:Name="chave" HorizontalAlignment="Left" Height="23" Margin="10,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="valor" HorizontalAlignment="Left" Height="23" Margin="10,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Add"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="520,82,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Clear"/>
+        <Button Content="Contains" HorizontalAlignment="Left" Margin="198,82,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Contains"/>
+        <ListBox x:Name="listBoxChave" HorizontalAlignment="Left" Height="232" Margin="10,149,0,0" VerticalAlignment="Top" Width="308"/>
+        <ListBox x:Name="listBoxValores" HorizontalAlignment="Left" Height="232" Margin="323,149,0,0" VerticalAlignment="Top" Width="308"/>
+        <TextBlock HorizontalAlignment="Left" Margin="353,20,0,0" TextWrapping="Wrap" Text="Chave" VerticalAlignment="Top"/>
+        <TextBox x:Name="chaveRemove" HorizontalAlignment="Left" Height="23" Margin="353,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="353,82,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClick_Remove"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,20,0,0" TextWrapping="Wrap" Text="Chave" VerticalAlignment="Top"/>
+        <TextBox x:Name="chaveContains" HorizontalAlignment="Left" Height="23" Margin="198,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

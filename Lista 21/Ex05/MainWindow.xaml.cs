@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace Ex05
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    ///     Interação lógica para MainWindow.xam
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -28,22 +28,47 @@ namespace Ex05
         private void ButtonClick_Add(object sender, RoutedEventArgs e)
         {
             d.Add(chave.Text, valor.Text);
-            foreach (string s in d.Chaves) listBox.Items.Add(s);
+            listBoxChave.ItemsSource = null;
+            listBoxValores.ItemsSource = null;
+            listBoxChave.ItemsSource = d.Chaves;
+            listBoxValores.ItemsSource = d.Valores;
         }
 
         private void ButtonClick_Remove(object sender, RoutedEventArgs e)
         {
-
+            if (d.Remove(chaveRemove.Text))
+            {
+                MessageBox.Show("Item removido do dicionário com sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Chave não existe");
+            }
+            listBoxChave.ItemsSource = null;
+            listBoxValores.ItemsSource = null;
+            listBoxChave.ItemsSource = d.Chaves;
+            listBoxValores.ItemsSource = d.Valores;
         }
 
         private void ButtonClick_Contains(object sender, RoutedEventArgs e)
         {
-
+            if (d.Contains(chaveContains.Text))
+            {
+                MessageBox.Show("Chave existe no dicionário.");
+            }
+            else
+            {
+                MessageBox.Show("Chave não existe no dicionário.");
+            }
         }
 
         private void ButtonClick_Clear(object sender, RoutedEventArgs e)
         {
-
+            d.Clear();
+            listBoxChave.ItemsSource = null;
+            listBoxValores.ItemsSource = null;
+            listBoxChave.ItemsSource = d.Chaves;
+            listBoxValores.ItemsSource = d.Valores;
         }
     }
 }
