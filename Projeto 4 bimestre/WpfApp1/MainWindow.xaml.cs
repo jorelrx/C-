@@ -24,5 +24,10 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void teste(object sender, MouseEventArgs e)
+        {
+            Background = Brushes.Transparent;
+        }
     }
 }
