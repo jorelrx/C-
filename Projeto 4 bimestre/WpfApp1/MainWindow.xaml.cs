@@ -27,7 +27,6 @@ namespace WpfApp1
 
         private void teste(object sender, MouseEventArgs e)
         {
-            Background = Brushes.Transparent;
         }
     }
 }
