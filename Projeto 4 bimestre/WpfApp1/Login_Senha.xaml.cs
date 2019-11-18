@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Interação lógica para Login_Senha.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Login_Senha : Page
     {
-        public MainWindow()
+        public Login_Senha()
         {
             InitializeComponent();
-        }
-
-        private void teste(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Login_Senha tela_Senha = new Login_Senha();
-            this.Content = tela_Senha;
         }
     }
 }
