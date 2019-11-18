@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para Login_Senha.xam
+    /// Interação lógica para Page_Cliente.xam
     /// </summary>
-    public partial class Login_Senha : Page
+    public partial class Page_Cliente : Page
     {
-        public Login_Senha()
+        public Page_Cliente()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Page_Cliente pc = new Page_Cliente();
-            this.Content = pc;
         }
     }
 }
