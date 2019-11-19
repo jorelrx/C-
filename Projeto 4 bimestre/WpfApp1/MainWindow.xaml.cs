@@ -34,5 +34,11 @@ namespace WpfApp1
             Login_Senha tela_Senha = new Login_Senha();
             this.Content = tela_Senha;
         }
+
+        private void Button_Criar_Conta(object sender, RoutedEventArgs e)
+        {
+            Inscricao insc = new Inscricao();
+            this.Content = insc;
+        }
     }
 }

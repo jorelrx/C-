@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page_Cliente">
+      d:DesignHeight="150" d:DesignWidth="300"
+      Title="Page_Cliente" Foreground="White">
 
     <Grid>
         <Grid.Background>
@@ -15,5 +15,10 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
+        <Button Background="Transparent" Foreground="White" Content="Listar dados" HorizontalAlignment="Left" Margin="17,83,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar dados" HorizontalAlignment="Left" Margin="110,83,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Background="Transparent" Foreground="White" Content="Listar tempo" HorizontalAlignment="Left" Margin="205,83,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Page>
