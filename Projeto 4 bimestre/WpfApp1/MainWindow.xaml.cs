@@ -24,21 +24,29 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        Program p = new Program();
+        Usuario u = new Usuario("Joel", "joelzin", "joel@");
 
-        private void teste(object sender, MouseEventArgs e)
-        {
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Login_Senha tela_Senha = new Login_Senha();
-            this.Content = tela_Senha;
+            p.InserirConta(u);
+            //Login_Senha tela_Senha = 
+            if (u.Login(loginUsuario.Text))
+                this.Content = new Login_Senha();
         }
 
         private void Button_Criar_Conta(object sender, RoutedEventArgs e)
         {
             Inscricao insc = new Inscricao();
             this.Content = insc;
+        }
+
+        /// ///////////////////////////
+        /// 
+        public void NewMethod()
+        {
+            this.Content = new Page_Cliente();
         }
     }
 }

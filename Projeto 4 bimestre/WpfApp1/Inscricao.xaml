@@ -27,7 +27,7 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="214,122,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="220,264,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23"/>
         <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,334,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Click="Button_Cancelar"/>
-        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,334,0,0" VerticalAlignment="Top" Width="74" Foreground="White"/>
+        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,334,0,0" VerticalAlignment="Top" Width="74" Foreground="White" Click="Button_NewAccount"/>
 
     </Grid>
 </Page>

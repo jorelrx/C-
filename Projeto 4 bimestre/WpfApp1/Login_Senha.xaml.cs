@@ -25,10 +25,9 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_LoginSenha(object sender, RoutedEventArgs e)
         {
-            Page_Cliente pc = new Page_Cliente();
-            this.Content = pc;
+            this.Content = new Page_Cliente();
         }
     }
 }

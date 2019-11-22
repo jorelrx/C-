@@ -30,5 +30,11 @@ namespace WpfApp1
             MainWindow mW = new MainWindow();
             this.Content = mW;
         }
+        Program p = new Program();
+        private void Button_NewAccount(object sender, RoutedEventArgs e)
+        {
+            Usuario u = new Usuario(nomeConta.Text, senheConta.Text, emailConta.Text);
+            p.InserirConta(u);
+        }
     }
 }
