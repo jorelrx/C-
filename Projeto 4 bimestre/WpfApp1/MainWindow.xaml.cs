@@ -24,15 +24,11 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        Program p = new Program();
-        Usuario u = new Usuario("Joel", "joelzin", "joel@");
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            p.InserirConta(u);
             //Login_Senha tela_Senha = 
-            if (u.Login(loginUsuario.Text))
                 this.Content = new Login_Senha();
         }
 
@@ -44,9 +40,9 @@ namespace WpfApp1
 
         /// ///////////////////////////
         /// 
-        public void NewMethod()
+        public void Tela_Senha()
         {
-            this.Content = new Page_Cliente();
+            this.Content = new Page_Administrador();
         }
     }
 }

@@ -27,7 +27,8 @@ namespace WpfApp1
 
         private void Button_LoginSenha(object sender, RoutedEventArgs e)
         {
-            this.Content = new Page_Cliente();
+            MainWindow mw = new MainWindow();
+            mw.Tela_Senha();
         }
     }
 }

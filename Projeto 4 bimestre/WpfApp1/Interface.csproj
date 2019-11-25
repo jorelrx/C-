@@ -55,9 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Usuario.cs" />
     <Page Include="ChangeAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +135,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModeloCliente\ModeloCliente.csproj">
+      <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
+      <Name>ModeloCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NegocioProgram\NegocioProgram.csproj">
+      <Project>{4d9d00ca-fcb7-4e03-8f3d-e2b3a8227279}</Project>
+      <Name>NegocioProgram</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

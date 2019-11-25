@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NegocioProgram;
+using ModeloCliente;
 
 namespace WpfApp1
 {
@@ -30,11 +32,11 @@ namespace WpfApp1
             MainWindow mW = new MainWindow();
             this.Content = mW;
         }
-        Program p = new Program();
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
-            Usuario u = new Usuario(nomeConta.Text, senheConta.Text, emailConta.Text);
-            p.InserirConta(u);
+            NProgram p = new NProgram();
+            MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+            p.InserirCliente(c);
         }
     }
 }

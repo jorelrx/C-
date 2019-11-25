@@ -21,7 +21,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="27,134,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
         <TextBox x:Name="emailConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,190,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="senheConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="senhaConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,243,0,0" TextWrapping="Wrap" Text="Confirmar senha" VerticalAlignment="Top"/>
         <TextBox x:Name="confSenha" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="214,122,0,0" VerticalAlignment="Top" Width="100"/>
