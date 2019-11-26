@@ -17,9 +17,6 @@ using ModeloCliente;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interação lógica para Inscricao.xam
-    /// </summary>
     public partial class Inscricao : Page
     {
         public Inscricao()
@@ -30,7 +27,6 @@ namespace WpfApp1
         private void Button_Cancelar(object sender, RoutedEventArgs e)
         {
             MainWindow mW = new MainWindow();
-            this.Content = mW;
         }
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {

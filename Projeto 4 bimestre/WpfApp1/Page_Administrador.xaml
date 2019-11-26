@@ -5,20 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="150" d:DesignWidth="330"
+      d:DesignHeight="350" d:DesignWidth="330"
       Title="Page_Administrador" Foreground="White">
 
-    <Grid>
+    <Grid Margin="0,0,0,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF28288B"/>
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Funcionário" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar dados" HorizontalAlignment="Left" Margin="28,85,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar dados" HorizontalAlignment="Left" Margin="121,85,0,0" VerticalAlignment="Top" Width="80" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="216,85,0,0" VerticalAlignment="Top" Width="97" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Mudar tipo de conta" HorizontalAlignment="Left" Margin="100,110,0,0" VerticalAlignment="Top" Width="119" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Administrador" VerticalAlignment="Top" FontSize="18"/>
+        <Button Background="Transparent" Foreground="White" Content="Listar meus dados" HorizontalAlignment="Left" Margin="27,85,0,0" VerticalAlignment="Top" Width="116" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar meus dados" HorizontalAlignment="Left" Margin="167,85,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,119,0,0" VerticalAlignment="Top" Width="116" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Adcionar funcionário" HorizontalAlignment="Left" Margin="167,119,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar dados do cliente" HorizontalAlignment="Left" Margin="91,238,0,0" VerticalAlignment="Top" Width="139" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar dados do funcionário" HorizontalAlignment="Left" Margin="81,272,0,0" VerticalAlignment="Top" Width="160" BorderBrush="White"/>
     </Grid>
 </Page>
