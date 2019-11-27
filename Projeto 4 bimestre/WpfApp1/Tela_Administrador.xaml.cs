@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para Page_Administrador.xam
+    /// Lógica interna para Tela_Administrador.xaml
     /// </summary>
-    public partial class Page_Administrador : Page
+    public partial class Tela_Administrador : Window
     {
-        public Page_Administrador()
+        public Tela_Administrador()
         {
             InitializeComponent();
         }

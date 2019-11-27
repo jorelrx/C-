@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para ChangeAccount.xam
+    /// Lógica interna para ChangeAccount.xaml
     /// </summary>
-    public partial class ChangeAccount : Page
+    public partial class ChangeAccount : Window
     {
         public ChangeAccount()
         {

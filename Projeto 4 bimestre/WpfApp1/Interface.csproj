@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChangeAccount.xaml.cs">
+      <DependentUpon>ChangeAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Administrador.xaml.cs">
+      <DependentUpon>Tela_Administrador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Cliente.xaml.cs">
+      <DependentUpon>Tela_Cliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Funcionario.xaml.cs">
+      <DependentUpon>Tela_Funcionario.xaml</DependentUpon>
+    </Compile>
     <Page Include="ChangeAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,9 +87,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ChangeAccount.xaml.cs">
-      <DependentUpon>ChangeAccount.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Inscricao.xaml.cs">
       <DependentUpon>Inscricao.xaml</DependentUpon>
     </Compile>
@@ -88,29 +97,20 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Page_Administrador.xaml">
+    <Page Include="Tela_Administrador.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page_Cliente.xaml">
+    <Page Include="Tela_Cliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page_Funcionario.xaml">
+    <Page Include="Tela_Funcionario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page_Administrador.xaml.cs">
-      <DependentUpon>Page_Administrador.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page_Cliente.xaml.cs">
-      <DependentUpon>Page_Cliente.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page_Funcionario.xaml.cs">
-      <DependentUpon>Page_Funcionario.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -140,6 +140,10 @@
     <ProjectReference Include="..\ModeloCliente\ModeloCliente.csproj">
       <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
       <Name>ModeloCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModeloFuncionario\ModeloFuncionario.csproj">
+      <Project>{585d323a-37fd-4a5a-9ec0-2c860fa82cf5}</Project>
+      <Name>ModeloFuncionario</Name>
     </ProjectReference>
     <ProjectReference Include="..\NegocioProgram\NegocioProgram.csproj">
       <Project>{4d9d00ca-fcb7-4e03-8f3d-e2b3a8227279}</Project>

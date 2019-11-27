@@ -10,25 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para Login_Senha.xam
+    /// Lógica interna para Login_Senha.xaml
     /// </summary>
-    public partial class Login_Senha : Page
+    public partial class Login_Senha : Window
     {
         public Login_Senha()
         {
             InitializeComponent();
         }
 
-        private void Button_LoginSenha(object sender, RoutedEventArgs e)
+        private void Button_LoginSenha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de login;
         {
-            MainWindow mw = new MainWindow();
-            mw.Tela_Senha();
+            Login_Senha login_Senha = new Login_Senha();
+            login_Senha.Show();
+            this.Close();
+        }
+
+        private void Voltar_Main(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

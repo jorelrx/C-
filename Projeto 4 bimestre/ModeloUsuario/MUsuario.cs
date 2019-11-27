@@ -19,6 +19,7 @@ namespace ModeloUsuario
             Senha = senha;
             Email = email;
         }
+        public MUsuario() { }
 
         public override string ToString()
         {

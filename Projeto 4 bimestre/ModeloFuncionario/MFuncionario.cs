@@ -10,6 +10,10 @@ namespace ModeloFuncionario
     public class MFuncionario : MUsuario
     {
         public bool admin { get; set; }
-        public MFuncionario(string nome, string senha, string email) : base(nome, senha, email) { }
+        public MFuncionario(string nome, string senha, string email, bool typeAccount) : base(nome, senha, email)
+        {
+            admin = typeAccount;
+        }
+        public MFuncionario() { }
     }
 }

@@ -10,29 +10,42 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NegocioProgram;
 using ModeloCliente;
+using ModeloFuncionario;
+using NegocioProgram;
 
 namespace WpfApp1
 {
-    public partial class Inscricao : Page
+    public partial class Inscricao : Window
     {
         public Inscricao()
         {
             InitializeComponent();
         }
-
+        int contas = 0;
         private void Button_Cancelar(object sender, RoutedEventArgs e)
         {
             MainWindow mW = new MainWindow();
+            mW.Show();
+            this.Close();
         }
+
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
-            NProgram p = new NProgram();
-            MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-            p.InserirCliente(c);
+            if (contas == 0)
+            {
+                NProgram p = new NProgram();
+                MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
+                p.InserirFuncionario(c);
+                contas++;
+            }
+            else
+            { 
+                NProgram p = new NProgram();
+                MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                p.InserirCliente(c);
+            }
         }
     }
 }

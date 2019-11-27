@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,24 +22,18 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Tela_Senha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de login;
         {
-            //Login_Senha tela_Senha = 
-                this.Content = new Login_Senha();
+            Login_Senha login_Senha = new Login_Senha();
+            login_Senha.Show();
+            this.Close();
         }
 
-        private void Button_Criar_Conta(object sender, RoutedEventArgs e)
+        private void Button_Criar_Conta(object sender, RoutedEventArgs e) // Botão pra carregar tela de inscrição
         {
-            Inscricao insc = new Inscricao();
-            this.Content = insc;
-        }
-
-        /// ///////////////////////////
-        /// 
-        public void Tela_Senha()
-        {
-            this.Content = new Page_Administrador();
+            Inscricao inscricao = new Inscricao();
+            inscricao.Show();
+            this.Close();
         }
     }
 }

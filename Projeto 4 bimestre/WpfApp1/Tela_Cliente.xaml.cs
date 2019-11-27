@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interação lógica para Page_Funcionario.xam
+    /// Lógica interna para Tela_Cliente.xaml
     /// </summary>
-    public partial class Page_Funcionario : Page
+    public partial class Tela_Cliente : Window
     {
-        public Page_Funcionario()
+        public Tela_Cliente()
         {
             InitializeComponent();
         }
