@@ -37,7 +37,7 @@ namespace WpfApp1
             if (contas == 0)
             {
                 NProgram p = new NProgram();
-                MUsuario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
+                MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
                 p.InserirConta(c);
                 contas++;
             }

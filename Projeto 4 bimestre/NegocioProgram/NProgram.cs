@@ -12,6 +12,34 @@ namespace NegocioProgram
 {
     public class NProgram
     {
+
+
+        /* --------------------------------------------------------------------------------------------------------------- */
+
+
+
+        public bool AllAccount(string nome)
+        {
+            bool teste = false;
+            PProgram p = new PProgram();
+            List<MUsuario> list = new List<MUsuario>();
+
+            foreach (MUsuario u in p.OpenFuncionario()) list.Add(u);
+            foreach (MUsuario u in p.OpenCliente()) list.Add(u);
+
+            foreach (MUsuario u in list) if (u.Nome == nome) teste = true;
+
+            return teste;
+        }
+
+
+
+        /* --------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
         public List<MUsuario> ListarContas()
         {
             PProgram p = new PProgram();
