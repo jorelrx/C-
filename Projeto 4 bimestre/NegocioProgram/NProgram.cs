@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModeloUsuario;
 using ModeloCliente;
 using ModeloFuncionario;
 using PersistenciaProgram;
@@ -11,6 +12,54 @@ namespace NegocioProgram
 {
     public class NProgram
     {
+        public List<MUsuario> ListarContas()
+        {
+            PProgram p = new PProgram();
+            return p.OpenContas();
+        }
+        public void InserirConta(MUsuario c)
+        {
+            PProgram p = new PProgram();
+            List<MUsuario> cs = p.OpenContas();
+            int m = 0;
+            foreach (MUsuario x in cs) if (x.Id > m) m = x.Id;
+            c.Id = m + 1;
+            cs.Add(c);
+
+            p.SaveContas(cs);
+        }
+        public void UpdateConta(MUsuario c)
+        {
+            PProgram p = new PProgram();
+            List<MUsuario> cs = p.OpenContas();
+            for (int i = 0; i < cs.Count; i++)
+                if (cs[i].Id == c.Id)
+                {
+                    cs.RemoveAt(i);
+                    break;
+                }
+            cs.Add(c);
+            p.SaveContas(cs);
+        }
+        public void DeleteConta(MUsuario c)
+        {
+            PProgram p = new PProgram();
+            List<MUsuario> cs = p.OpenContas();
+            for (int i = 0; i < cs.Count; i++)
+                if (cs[i].Id == c.Id)
+                {
+                    cs.RemoveAt(i);
+                    break;
+                }
+            p.SaveContas(cs);
+        }
+
+
+
+
+
+
+
         public List<MCliente> ListarClientes()
         {
             PProgram p = new PProgram();

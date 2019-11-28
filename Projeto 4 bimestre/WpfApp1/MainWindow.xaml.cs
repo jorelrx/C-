@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NegocioProgram;
 
 namespace WpfApp1
 {
@@ -24,6 +25,8 @@ namespace WpfApp1
 
         private void Button_Tela_Senha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de login;
         {
+            string login = loginUsuario.Text;
+
             Login_Senha login_Senha = new Login_Senha();
             login_Senha.Show();
             this.Close();

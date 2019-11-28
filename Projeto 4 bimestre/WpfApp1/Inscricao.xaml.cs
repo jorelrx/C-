@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ModeloUsuario;
 using ModeloCliente;
 using ModeloFuncionario;
 using NegocioProgram;
@@ -36,15 +37,16 @@ namespace WpfApp1
             if (contas == 0)
             {
                 NProgram p = new NProgram();
-                MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
-                p.InserirFuncionario(c);
+                MUsuario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
+                p.InserirConta(c);
                 contas++;
             }
             else
-            { 
+            {
                 NProgram p = new NProgram();
-                MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-                p.InserirCliente(c);
+                MUsuario c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                p.InserirConta(c);
+                contas++;
             }
         }
     }

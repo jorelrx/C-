@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using ModeloUsuario;
 using ModeloCliente;
 using ModeloFuncionario;
 
@@ -12,8 +13,39 @@ namespace PersistenciaProgram
 {
     public class PProgram
     {
+        private string contas = "Contas.xml";
         private string clientes = "Clientes.xml";
         private string funcionarios = "Funcionarios.xml";
+        public List<MUsuario> OpenContas()
+        {
+            XmlSerializer x = new XmlSerializer(typeof(List<MUsuario>));
+            StreamReader f = null;
+            List<MUsuario> cs = null;
+            try
+            {
+                f = new StreamReader(contas, Encoding.Default);
+                cs = x.Deserialize(f) as List<MUsuario>;
+            }
+            catch
+            {
+                cs = new List<MUsuario>();
+            }
+            finally
+            {
+                if (f != null) f.Close();
+            }
+            return cs;
+        }
+        public void SaveContas(List<MFuncionario> cs)
+        {
+            XmlSerializer x = new XmlSerializer(typeof(List<MFuncionario>));
+            StreamWriter f = new StreamWriter(contas, false, Encoding.Default);
+            x.Serialize(f, cs);
+            f.Close();
+        }
+
+        /* --------------------------------------------------------------------------------------------------------------- */
+
         public List<MCliente> OpenCliente()
         {
             XmlSerializer x = new XmlSerializer(typeof(List<MCliente>));
