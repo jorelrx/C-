@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NegocioProgram;
+using ModeloUsuario;
+using ModeloFuncionario;
+using ModeloCliente;
 
 namespace WpfApp1
 {
@@ -24,11 +28,39 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_LoginSenha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de login;
+        private void Button_LoginSenha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de pos login;
         {
-            Login_Senha login_Senha = new Login_Senha();
-            login_Senha.Show();
-            this.Close();
+            bool verificar = false;
+            NProgram p = new NProgram();
+            foreach (MCliente c in p.ListarClientes())
+                if (c.Nome == buttonEmail.Content.ToString() && c.Senha == senhaUsuario.Text)
+                {
+                    Tela_Cliente posLogin = new Tela_Cliente();
+                    posLogin.Show();
+                    this.Close();
+                    verificar = true;
+                    break;
+                }
+            foreach (MFuncionario f in p.ListarFuncionario())
+                if (f.Nome == buttonEmail.Content.ToString() && f.Senha == senhaUsuario.Text)
+                {
+                    if (f.Admin == true)
+                    {
+                        Tela_Administrador tA = new Tela_Administrador();
+                        tA.Show();
+                        this.Close();
+                        verificar = true;
+                    }
+                    else
+                    {
+                        Tela_Funcionario tF = new Tela_Funcionario();
+                        tF.Show();
+                        this.Close();
+                        verificar = true;
+                    }
+                    break;
+                }
+            if (verificar != true) MessageBox.Show("Senha incorreta!\nTente novamente.");
         }
 
         private void Voltar_Main(object sender, RoutedEventArgs e)

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Tela_Cliente" Height="400" Width="350" Foreground="White">
+        Title="Tela_Cliente" Height="265" Width="350" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -14,9 +14,12 @@
             </LinearGradientBrush>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar dados" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="90"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar dados" HorizontalAlignment="Left" Margin="105,73,0,0" VerticalAlignment="Top" Width="90"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar tempo" HorizontalAlignment="Left" Margin="200,73,0,0" VerticalAlignment="Top" Width="90"/>
-        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="13,139,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button Background="Transparent" Foreground="White" Content="Listar dados" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar dados" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Background="Transparent" Foreground="White" Content="Listar tempo" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top" Width="104"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="258,204,0,0" VerticalAlignment="Top" Width="75" Click="Button_Sair"/>
+        <Button Background="Transparent" Foreground="White" Content="Extrato de acesso" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Width="104"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="233,10,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

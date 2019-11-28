@@ -58,6 +58,9 @@
     <Compile Include="ChangeAccount.xaml.cs">
       <DependentUpon>ChangeAccount.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Comprar_Acesso.xaml.cs">
+      <DependentUpon>Comprar_Acesso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Administrador.xaml.cs">
       <DependentUpon>Tela_Administrador.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,10 @@
       <DependentUpon>Tela_Funcionario.xaml</DependentUpon>
     </Compile>
     <Page Include="ChangeAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Comprar_Acesso.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

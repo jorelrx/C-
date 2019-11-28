@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NegocioProgram;
 using ModeloFuncionario;
+using ModeloUsuario;
+using ModeloCliente;
 
 namespace WpfApp1
 {
@@ -27,12 +29,13 @@ namespace WpfApp1
         private void Button_Tela_Senha(object sender, RoutedEventArgs e) // Botão pra carregar segunda tela de login;
         {
             NProgram p = new NProgram();
-            MFuncionario f = new MFuncionario("joel", "joel1", "joel@", true);
-            p.InserirFuncionario(f);
-            if (p.AllAccount(loginUsuario.Text))
+            bool verificar = false;
+            foreach (MUsuario u in p.AllAccount()) if (u.Nome == loginUsuario.Text) verificar = true;
+            if (verificar == true)
             {
                 Login_Senha login_Senha = new Login_Senha();
                 login_Senha.Show();
+                login_Senha.buttonEmail.Content = loginUsuario.Text;
                 this.Close();
             }
             else MessageBox.Show("Usuario não existe");

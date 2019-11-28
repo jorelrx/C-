@@ -15,21 +15,15 @@ namespace NegocioProgram
 
 
         /* --------------------------------------------------------------------------------------------------------------- */
-
-
-
-        public bool AllAccount(string nome)
+        public List<MUsuario> AllAccount()
         {
-            bool teste = false;
             PProgram p = new PProgram();
             List<MUsuario> list = new List<MUsuario>();
 
             foreach (MUsuario u in p.OpenFuncionario()) list.Add(u);
             foreach (MUsuario u in p.OpenCliente()) list.Add(u);
 
-            foreach (MUsuario u in list) if (u.Nome == nome) teste = true;
-
-            return teste;
+            return list;
         }
 
 

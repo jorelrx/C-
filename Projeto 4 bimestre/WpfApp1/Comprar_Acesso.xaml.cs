@@ -14,18 +14,14 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    public partial class Tela_Cliente : Window
+    /// <summary>
+    /// Lógica interna para Comprar_Acesso.xaml
+    /// </summary>
+    public partial class Comprar_Acesso : Window
     {
-        public Tela_Cliente()
+        public Comprar_Acesso()
         {
             InitializeComponent();
-        }
-
-        private void Button_Sair(object sender, RoutedEventArgs e)
-        {
-            MainWindow mW = new MainWindow();
-            mW.Show();
-            this.Close();
         }
     }
 }
