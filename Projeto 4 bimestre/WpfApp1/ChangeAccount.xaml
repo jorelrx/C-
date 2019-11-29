@@ -13,9 +13,9 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ListBox HorizontalAlignment="Center" Height="165" Margin="26,190,24,0" VerticalAlignment="Top" Width="300"/>
+        <ListBox HorizontalAlignment="Center" Height="165" Margin="10,134,10,0" VerticalAlignment="Top" Width="322"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Mudar tipo de conta" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Left" Margin="27,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" Width="75"/>
         <CheckBox Foreground="White" Content="Cliente" HorizontalAlignment="Left" Margin="26,102,0,0" VerticalAlignment="Top"/>
         <CheckBox Foreground="White" Content="Funcionário" HorizontalAlignment="Left" Margin="122,102,0,0" VerticalAlignment="Top"/>
         <CheckBox Foreground="White" Content="Administrador" HorizontalAlignment="Left" Margin="234,102,0,0" VerticalAlignment="Top"/>

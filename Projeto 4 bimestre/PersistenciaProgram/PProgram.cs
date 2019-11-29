@@ -23,7 +23,7 @@ namespace PersistenciaProgram
             List<MUsuario> cs = null;
             try
             {
-                f = new StreamReader(contas, Encoding.Default);
+                f = new StreamReader(funcionarios, Encoding.Default);
                 cs = x.Deserialize(f) as List<MUsuario>;
             }
             catch

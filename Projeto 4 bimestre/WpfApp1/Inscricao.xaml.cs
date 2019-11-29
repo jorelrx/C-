@@ -32,21 +32,20 @@ namespace WpfApp1
             this.Close();
         }
 
+        NProgram p = new NProgram();
+
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
+            foreach (MUsuario u in p.ListarContas()) if (u.Id > contas) contas = u.Id;
             if (contas == 0)
             {
-                NProgram p = new NProgram();
                 MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
-                p.InserirConta(c);
-                contas++;
+                p.InserirFuncionario(c);
             }
             else
             {
-                NProgram p = new NProgram();
-                MUsuario c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-                p.InserirConta(c);
-                contas++;
+                MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                p.InserirCliente(c);
             }
         }
     }
