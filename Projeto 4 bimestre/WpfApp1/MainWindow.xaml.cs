@@ -30,7 +30,7 @@ namespace WpfApp1
         {
             NProgram p = new NProgram();
             bool verificar = false;
-            foreach (MUsuario u in p.AllAccount()) if (u.Nome == loginUsuario.Text) verificar = true;
+            foreach (MUsuario u in p.AllAccount()) if (u.Nome == loginUsuario.Text && loginUsuario.Text != "") verificar = true;
             if (verificar == true)
             {
                 Login_Senha login_Senha = new Login_Senha();
