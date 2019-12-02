@@ -14,13 +14,11 @@
             </LinearGradientBrush>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Funcionário" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar meus dados" HorizontalAlignment="Left" Margin="27,85,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar meus dados" HorizontalAlignment="Left" Margin="27,110,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar dados" HorizontalAlignment="Left" Margin="27,100,0,0" VerticalAlignment="Top" Width="97" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar dados" HorizontalAlignment="Left" Margin="27,135,0,0" VerticalAlignment="Top" Width="97" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,169,0,0" VerticalAlignment="Top" Width="97" BorderBrush="White"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="257,204,0,0" VerticalAlignment="Top" Width="75" Click="Button_Sair"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="232,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar tempo" HorizontalAlignment="Left" Margin="27,194,0,0" VerticalAlignment="Top" Width="97" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="27,193,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,193,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
+        <Image HorizontalAlignment="Right" Height="100" Margin="0,10,10,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

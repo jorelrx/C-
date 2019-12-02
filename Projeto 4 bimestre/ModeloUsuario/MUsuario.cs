@@ -25,5 +25,9 @@ namespace ModeloUsuario
         {
             return $"Id = {Id}\nNome = {Nome}\nSenha = {Senha}\nEmail = {Email}";
         }
+        public void SetId(int id)
+        {
+            Id = id;
+        }
     }
 }

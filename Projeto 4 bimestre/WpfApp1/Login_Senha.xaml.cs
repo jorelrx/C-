@@ -48,6 +48,7 @@ namespace WpfApp1
                     {
                         Tela_Administrador tA = new Tela_Administrador();
                         tA.Show();
+                        tA.TypeAccount.Text = f.Id.ToString();
                         this.Close();
                         verificar = true;
                     }

@@ -61,6 +61,12 @@
     <Compile Include="Comprar_Acesso.xaml.cs">
       <DependentUpon>Comprar_Acesso.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extrato_Acessos.xaml.cs">
+      <DependentUpon>Extrato_Acessos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Meus_Dados.xaml.cs">
+      <DependentUpon>Meus_Dados.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Administrador.xaml.cs">
       <DependentUpon>Tela_Administrador.xaml</DependentUpon>
     </Compile>
@@ -75,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Comprar_Acesso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Extrato_Acessos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,6 +114,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Meus_Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Tela_Administrador.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

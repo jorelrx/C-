@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Tela_Administrador" Height="400" Width="350" Foreground="White">
+        Title="Tela_Administrador" Height="256.036" Width="350" Foreground="White">
     <Grid Margin="0,0,0,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,13 +13,13 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Administrador" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Listar meus dados" HorizontalAlignment="Left" Margin="27,85,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar meus dados" HorizontalAlignment="Left" Margin="27,110,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar funcionário" HorizontalAlignment="Left" Margin="27,158,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,183,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="27,208,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,208,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
-        <Image HorizontalAlignment="Right" Height="100" Margin="0,10,10,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,22,0,0" TextWrapping="Wrap" Text="Administrador" VerticalAlignment="Top" FontSize="18"/>
+        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="19,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_Meus_Dados"/>
+        <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="19,118,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Adcionar conta" HorizontalAlignment="Left" Margin="19,168,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="19,193,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="249,193,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
+        <Image HorizontalAlignment="Right" Height="100" Margin="0,10,18,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

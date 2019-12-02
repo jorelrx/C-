@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Comprar_Acesso" Height="200" Width="350" Foreground="White">
+        Title="Comprar_Acesso" Height="183.607" Width="250.41" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,10 +13,10 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="27,67,0,0" TextWrapping="Wrap" Text="Valor da compra" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="27,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104"/>
-        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="27,122,0,0" VerticalAlignment="Top" Width="104" Height="23"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="257,139,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,65,0,0" TextWrapping="Wrap" Text="Valor da compra" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="16,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104"/>
+        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="16,123,0,0" VerticalAlignment="Top" Width="104" Height="20" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Cancelar" HorizontalAlignment="Left" Margin="150,123,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
     </Grid>
 </Window>
