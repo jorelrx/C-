@@ -7,13 +7,13 @@ using ModeloUsuario;
 using ModeloCliente;
 using ModeloFuncionario;
 using PersistenciaProgram;
+using PersistenciaComprar_Tempo;
+using ModeloComprar_Tempo;
 
 namespace NegocioProgram
 {
     public class NProgram
     {
-
-
         /* --------------------------------------------------------------------------------------------------------------- */
         public List<MUsuario> AllAccount()
         {
@@ -38,7 +38,7 @@ namespace NegocioProgram
         {
             PProgram p = new PProgram();
             return p.OpenContas();
-        }
+        }/*
         public void InserirConta(MUsuario c)
         {
             PProgram p = new PProgram();
@@ -74,7 +74,7 @@ namespace NegocioProgram
                     break;
                 }
             p.SaveContas(cs);
-        }
+        }*/
 
 
 

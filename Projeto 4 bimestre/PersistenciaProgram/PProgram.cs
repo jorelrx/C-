@@ -36,14 +36,6 @@ namespace PersistenciaProgram
             }
             return cs;
         }
-        public void SaveContas(List<MUsuario> cs)
-        {
-            /*XmlSerializer x = new XmlSerializer(typeof(List<MUsuario>));
-            StreamWriter f = new StreamWriter(contas, false, Encoding.Default);
-            x.Serialize(f, cs);
-            f.Close();*/
-            //if (cs is MUsuario) 
-        }
 
 
 

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using NegocioProgram;
 using ModeloFuncionario;
+using PersistenciaComprar_Tempo;
 
 namespace WpfApp1
 {
@@ -44,9 +45,29 @@ namespace WpfApp1
                     Md.nomeConta.Text = f.Nome.ToString();
                     Md.emailConta.Text = f.Email.ToString();
                     Md.senhaConta.Text = f.Senha.ToString();
-                    Md.confSenha.Text = f.Senha.ToString();
                 }
             Md.Show();
+        }
+
+        private void Button_PedidoDeTempo(object sender, RoutedEventArgs e)
+        {
+            PComprar_Tempo c = new PComprar_Tempo();
+            Pedidos_De_Tempo pedidos = new Pedidos_De_Tempo();
+            pedidos.listBox.ItemsSource = c.OpenCompras();
+            pedidos.Show();
+        }
+
+        private void Button_AddConta(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_GerenciarConta(object sender, RoutedEventArgs e)
+        {
+            ChangeAccount cA = new ChangeAccount();
+            cA.Show();
+            cA.TypeAccount.Text = TypeAccount.Text;
+            cA.listBox.ItemsSource = p.ListarContas();
         }
     }
 }

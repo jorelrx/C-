@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AlterarConta.xaml.cs">
+      <DependentUpon>AlterarConta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChangeAccount.xaml.cs">
       <DependentUpon>ChangeAccount.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,9 @@
     <Compile Include="Meus_Dados.xaml.cs">
       <DependentUpon>Meus_Dados.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pedidos_De_Tempo.xaml.cs">
+      <DependentUpon>Pedidos_De_Tempo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Administrador.xaml.cs">
       <DependentUpon>Tela_Administrador.xaml</DependentUpon>
     </Compile>
@@ -76,6 +82,10 @@
     <Compile Include="Tela_Funcionario.xaml.cs">
       <DependentUpon>Tela_Funcionario.xaml</DependentUpon>
     </Compile>
+    <Page Include="AlterarConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChangeAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +125,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Meus_Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pedidos_De_Tempo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -162,6 +176,10 @@
       <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
       <Name>ModeloCliente</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModeloComprar_Tempo\ModeloComprar_Tempo.csproj">
+      <Project>{cc362d98-b23e-4f98-98c9-2a9e97d58b80}</Project>
+      <Name>ModeloComprar_Tempo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModeloFuncionario\ModeloFuncionario.csproj">
       <Project>{585d323a-37fd-4a5a-9ec0-2c860fa82cf5}</Project>
       <Name>ModeloFuncionario</Name>
@@ -170,9 +188,17 @@
       <Project>{ee61822c-91fd-4037-b0ad-2399862adc3c}</Project>
       <Name>ModeloUsuario</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NegocioCliente\NegocioCliente.csproj">
+      <Project>{43867eda-9588-4ac0-88e9-fa04c56b5cde}</Project>
+      <Name>NegocioCliente</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NegocioProgram\NegocioProgram.csproj">
       <Project>{4d9d00ca-fcb7-4e03-8f3d-e2b3a8227279}</Project>
       <Name>NegocioProgram</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistenciaComprar_Tempo\PersistenciaComprar_Tempo.csproj">
+      <Project>{27129e30-6582-41e6-aebd-1d3a368ef6db}</Project>
+      <Name>PersistenciaComprar_Tempo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

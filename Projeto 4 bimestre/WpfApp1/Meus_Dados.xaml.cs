@@ -44,7 +44,6 @@ namespace WpfApp1
                         MFuncionario newF = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, list[i].Admin);
                         newF.SetId(list[i].Id);
                         p.UpdateFuncionario(newF);
-                        MessageBox.Show("Deu certo!");
                     }
                 }
             }
@@ -55,10 +54,9 @@ namespace WpfApp1
                 {
                     if (list[i].Id == int.Parse(IdAccount.Text))
                     {
-                        MCliente newF = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-                        newF.SetId(list[i].Id);
-                        p.UpdateCliente(newF);
-                        MessageBox.Show("Deu certo!");
+                        MCliente newC = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                        newC.SetId(list[i].Id);
+                        p.UpdateCliente(newC);
                     }
                 }
             }

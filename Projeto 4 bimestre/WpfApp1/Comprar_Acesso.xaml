@@ -13,10 +13,12 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="16,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="16,65,0,0" TextWrapping="Wrap" Text="Valor da compra" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="16,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104"/>
-        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="16,123,0,0" VerticalAlignment="Top" Width="104" Height="20" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Cancelar" HorizontalAlignment="Left" Margin="150,123,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
+        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock x:Name="IdAccount"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,19,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,54,0,0" TextWrapping="Wrap" Text="Valor da compra" VerticalAlignment="Top"/>
+        <TextBox x:Name="valorCompra" HorizontalAlignment="Left" Height="23" Margin="17,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104"/>
+        <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="17,112,0,0" VerticalAlignment="Top" Width="104" Height="20" BorderBrush="White" Click="Button_ComprarTempo"/>
+        <Button Background="Transparent" Foreground="White" Content="Cancelar" HorizontalAlignment="Left" Margin="151,112,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Click"/>
     </Grid>
 </Window>

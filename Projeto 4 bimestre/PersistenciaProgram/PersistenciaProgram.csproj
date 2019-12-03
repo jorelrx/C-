@@ -49,6 +49,10 @@
       <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
       <Name>ModeloCliente</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModeloComprar_Tempo\ModeloComprar_Tempo.csproj">
+      <Project>{cc362d98-b23e-4f98-98c9-2a9e97d58b80}</Project>
+      <Name>ModeloComprar_Tempo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModeloFuncionario\ModeloFuncionario.csproj">
       <Project>{585d323a-37fd-4a5a-9ec0-2c860fa82cf5}</Project>
       <Name>ModeloFuncionario</Name>

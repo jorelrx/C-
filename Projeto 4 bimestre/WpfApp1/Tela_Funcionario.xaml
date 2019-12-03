@@ -13,8 +13,10 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock x:Name="IdAccount"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Funcionário" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_Click"/>
         <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
         <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
         <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="27,193,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>

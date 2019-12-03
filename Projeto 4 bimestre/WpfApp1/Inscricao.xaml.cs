@@ -47,6 +47,7 @@ namespace WpfApp1
                 MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
                 p.InserirCliente(c);
             }
+            Button_Cancelar(sender, e);
         }
     }
 }

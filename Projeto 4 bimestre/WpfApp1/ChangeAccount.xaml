@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ChangeAccount" Height="334.426" Width="350" Foreground="White">
+        Title="ChangeAccount" Height="291.335" Width="350" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,11 +15,8 @@
         </Grid.Background>
         <TextBlock x:Name="TypeAccount"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="Gerenciar contas" VerticalAlignment="Top" FontSize="18"/>
-        <CheckBox Foreground="White" Content="Cliente" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
-        <CheckBox Foreground="White" Content="Funcionário" HorizontalAlignment="Left" Margin="116,64,0,0" VerticalAlignment="Top"/>
-        <CheckBox Foreground="White" Content="Administrador" HorizontalAlignment="Left" Margin="227,64,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Center" Height="165" Margin="10,96,10,0" VerticalAlignment="Top" Width="322"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Center" Margin="10,271,257,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,271,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Center" Height="165" Margin="10,52,10,0" VerticalAlignment="Top" Width="322"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Center" Margin="10,227,257,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_AlterarConta"/>
+        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,227,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
     </Grid>
 </Window>

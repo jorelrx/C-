@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43867EDA-9588-4AC0-88E9-FA04C56B5CDE}</ProjectGuid>
+    <ProjectGuid>{27129E30-6582-41E6-AEBD-1D3A368EF6DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NegocioCliente</RootNamespace>
-    <AssemblyName>NegocioCliente</AssemblyName>
+    <RootNamespace>PersistenciaComprar_Tempo</RootNamespace>
+    <AssemblyName>PersistenciaComprar_Tempo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,25 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NCliente.cs" />
+    <Compile Include="PComprar_Tempo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModeloCliente\ModeloCliente.csproj">
-      <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
-      <Name>ModeloCliente</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ModeloComprar_Tempo\ModeloComprar_Tempo.csproj">
       <Project>{cc362d98-b23e-4f98-98c9-2a9e97d58b80}</Project>
       <Name>ModeloComprar_Tempo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ModeloUsuario\ModeloUsuario.csproj">
-      <Project>{ee61822c-91fd-4037-b0ad-2399862adc3c}</Project>
-      <Name>ModeloUsuario</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PersistenciaComprar_Tempo\PersistenciaComprar_Tempo.csproj">
-      <Project>{27129e30-6582-41e6-aebd-1d3a368ef6db}</Project>
-      <Name>PersistenciaComprar_Tempo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

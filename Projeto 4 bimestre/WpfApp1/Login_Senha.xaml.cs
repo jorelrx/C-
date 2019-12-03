@@ -37,6 +37,7 @@ namespace WpfApp1
                 {
                     Tela_Cliente posLogin = new Tela_Cliente();
                     posLogin.Show();
+                    posLogin.IdAccount.Text = c.Id.ToString();
                     this.Close();
                     verificar = true;
                     break;

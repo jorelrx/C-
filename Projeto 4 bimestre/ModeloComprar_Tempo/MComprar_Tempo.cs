@@ -10,6 +10,18 @@ namespace ModeloComprar_Tempo
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string ValorCompra { get; set; }
+        public double ValorCompra { get; set; }
+        public bool SituacaoCompra { get; set; }
+        public MComprar_Tempo(int id, string nome, double valorCompra)
+        {
+            Id = id;
+            Nome = nome;
+            ValorCompra = valorCompra;
+        }
+        public MComprar_Tempo() { }
+        public override string ToString()
+        {
+            return $"Id do cliente: {Id}; Nome do cliente: {Nome}; Valor da compra: {ValorCompra};";
+        }
     }
 }

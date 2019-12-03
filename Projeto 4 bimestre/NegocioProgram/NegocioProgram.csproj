@@ -49,6 +49,10 @@
       <Project>{4e055af9-2059-489e-8aa0-c04797a7532d}</Project>
       <Name>ModeloCliente</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModeloComprar_Tempo\ModeloComprar_Tempo.csproj">
+      <Project>{cc362d98-b23e-4f98-98c9-2a9e97d58b80}</Project>
+      <Name>ModeloComprar_Tempo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModeloFuncionario\ModeloFuncionario.csproj">
       <Project>{585d323a-37fd-4a5a-9ec0-2c860fa82cf5}</Project>
       <Name>ModeloFuncionario</Name>
@@ -56,6 +60,10 @@
     <ProjectReference Include="..\ModeloUsuario\ModeloUsuario.csproj">
       <Project>{ee61822c-91fd-4037-b0ad-2399862adc3c}</Project>
       <Name>ModeloUsuario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistenciaComprar_Tempo\PersistenciaComprar_Tempo.csproj">
+      <Project>{27129e30-6582-41e6-aebd-1d3a368ef6db}</Project>
+      <Name>PersistenciaComprar_Tempo</Name>
     </ProjectReference>
     <ProjectReference Include="..\PersistenciaProgram\PersistenciaProgram.csproj">
       <Project>{5454bf2d-8fba-46e9-90da-e5019b81e365}</Project>

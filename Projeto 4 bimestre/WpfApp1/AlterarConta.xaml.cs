@@ -15,16 +15,21 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Lógica interna para ChangeAccount.xaml
+    /// Lógica interna para AlterarConta.xaml
     /// </summary>
-    public partial class ChangeAccount : Window
+    public partial class AlterarConta : Window
     {
-        public ChangeAccount()
+        public AlterarConta()
         {
             InitializeComponent();
         }
 
-        private void Button_AlterarConta(object sender, RoutedEventArgs e)
+        private void Button_NewAccount(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Cancelar(object sender, RoutedEventArgs e)
         {
 
         }

@@ -11,17 +11,36 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NegocioCliente;
+using ModeloComprar_Tempo;
+using ModeloCliente;
+using NegocioProgram;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Lógica interna para Comprar_Acesso.xaml
-    /// </summary>
     public partial class Comprar_Acesso : Window
     {
         public Comprar_Acesso()
         {
             InitializeComponent();
+        }
+
+        private void Button_ComprarTempo(object sender, RoutedEventArgs e)
+        {
+            NProgram p = new NProgram();
+            NCliente c = new NCliente();
+            foreach (MCliente m in p.ListarClientes())
+                if (m.Id == int.Parse(IdAccount.Text))
+                {
+                    MComprar_Tempo compra = new MComprar_Tempo(m.Id, m.Nome, double.Parse(valorCompra.Text));
+                    c.ComprarTempo(compra);
+                }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
