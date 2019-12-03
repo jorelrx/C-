@@ -25,6 +25,6 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="206,100,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="214,211,0,0" VerticalAlignment="Top" Width="84" Foreground="White" BorderBrush="White" FontSize="16" Height="23"/>
         <Button Background="Transparent" Content="Alterar dados" HorizontalAlignment="Left" Margin="27,281,0,0" VerticalAlignment="Top" Width="87" Foreground="White" BorderBrush="White" Click="Button_Alterar_Dados"/>
-        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="224,281,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_Fechar"/>
+        <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="224,281,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_Fechar"/>
     </Grid>
 </Window>

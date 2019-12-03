@@ -36,7 +36,7 @@ namespace WpfApp1
 
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
-            foreach (MUsuario u in p.ListarFuncionario()) if (u.Id > contas) contas = u.Id;
+            foreach (MUsuario u in p.AllAccount()) if (u.Id > contas) contas = u.Id;
             if (contas == 0)
             {
                 MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);

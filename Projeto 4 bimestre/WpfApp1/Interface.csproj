@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddConta.xaml.cs">
+      <DependentUpon>AddConta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AlterarConta.xaml.cs">
       <DependentUpon>AlterarConta.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,9 @@
     </Compile>
     <Compile Include="Comprar_Acesso.xaml.cs">
       <DependentUpon>Comprar_Acesso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extratos_de_Compra.xaml.cs">
+      <DependentUpon>Extratos_de_Compra.xaml</DependentUpon>
     </Compile>
     <Compile Include="Extrato_Acessos.xaml.cs">
       <DependentUpon>Extrato_Acessos.xaml</DependentUpon>
@@ -82,6 +88,10 @@
     <Compile Include="Tela_Funcionario.xaml.cs">
       <DependentUpon>Tela_Funcionario.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AlterarConta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Comprar_Acesso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Extratos_de_Compra.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,17 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ModeloCliente;
-using ModeloFuncionario;
 using NegocioProgram;
+using ModeloFuncionario;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Lógica interna para AlterarConta.xaml
-    /// </summary>
-    public partial class AlterarConta : Window
+    public partial class AddConta : Window
     {
-        public AlterarConta(string tA)
+        public AddConta(string tA)
         {
             InitializeComponent();
             if (tA == "Funcionario")
@@ -30,39 +27,34 @@ namespace WpfApp1
                 funcionario.Visibility = Visibility.Hidden;
                 administrador.Visibility = Visibility.Hidden;
             }
-            TypeAccount.Text = tA;
         }
         NProgram p = new NProgram();
-        private void Button_AlterarConta(object sender, RoutedEventArgs e)
+        private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
-            foreach (MCliente c in p.ListarClientes()) if (c.Id == int.Parse(IdAccount.Text)) p.DeleteCliente(c);
-            foreach (MFuncionario c in p.ListarFuncionario()) if (c.Id == int.Parse(IdAccount.Text)) p.DeleteFuncionario(c);
             if (cliente.IsChecked == true)
             {
                 MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
                 p.InserirCliente(c);
-                c.SetId(int.Parse(IdAccount.Text));
-                p.UpdateCliente(c);
-                MessageBox.Show("Alterado com sucesso!");
+                MessageBox.Show("Conta criada com sucesso");
                 this.Close();
             }
             else if (funcionario.IsChecked == true)
             {
                 MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, false);
                 p.InserirFuncionario(c);
-                c.SetId(int.Parse(IdAccount.Text));
-                p.UpdateFuncionario(c);
-                MessageBox.Show("Alterado com sucesso!");
+                MessageBox.Show("Conta criada com sucesso");
                 this.Close();
             }
             else if (administrador.IsChecked == true)
             {
                 MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
                 p.InserirFuncionario(c);
-                c.SetId(int.Parse(IdAccount.Text));
-                p.UpdateFuncionario(c);
-                MessageBox.Show("Alterado com sucesso!");
+                MessageBox.Show("Conta criada com sucesso");
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Dados incorretos, por favor inserir corretamente!");
             }
         }
 

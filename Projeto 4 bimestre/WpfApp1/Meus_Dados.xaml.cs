@@ -44,6 +44,8 @@ namespace WpfApp1
                         MFuncionario newF = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, list[i].Admin);
                         newF.SetId(list[i].Id);
                         p.UpdateFuncionario(newF);
+                        MessageBox.Show("Dados alterados com sucesso");
+                        this.Close();
                     }
                 }
             }
@@ -54,9 +56,13 @@ namespace WpfApp1
                 {
                     if (list[i].Id == int.Parse(IdAccount.Text))
                     {
+                        double tempo = list[i].Tempo;
                         MCliente newC = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
                         newC.SetId(list[i].Id);
                         p.UpdateCliente(newC);
+                        p.InserirTempo(newC, list[i].Tempo);
+                        MessageBox.Show("Dados alterados com sucesso");
+                        this.Close();
                     }
                 }
             }

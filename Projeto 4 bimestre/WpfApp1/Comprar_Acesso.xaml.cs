@@ -34,6 +34,8 @@ namespace WpfApp1
                 {
                     MComprar_Tempo compra = new MComprar_Tempo(m.Id, m.Nome, double.Parse(valorCompra.Text));
                     c.ComprarTempo(compra);
+                    MessageBox.Show("Solicitação enviada!");
+                    this.Close();
                 }
 
         }

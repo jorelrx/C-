@@ -38,9 +38,9 @@ namespace WpfApp1
         {
             Meus_Dados Md = new Meus_Dados();
             foreach (MFuncionario f in p.ListarFuncionario())
-                if (f.Id == int.Parse(TypeAccount.Text))
+                if (f.Id == int.Parse(IdAccount.Text))
                 {
-                    Md.TypeAccount.Text = "Administrador";
+                    Md.TypeAccount.Text = TypeAccount.Text;
                     Md.IdAccount.Text = f.Id.ToString();
                     Md.nomeConta.Text = f.Nome.ToString();
                     Md.emailConta.Text = f.Email.ToString();
@@ -59,7 +59,8 @@ namespace WpfApp1
 
         private void Button_AddConta(object sender, RoutedEventArgs e)
         {
-
+            AddConta addConta = new AddConta(TypeAccount.Text);
+            addConta.Show();
         }
 
         private void Button_GerenciarConta(object sender, RoutedEventArgs e)
@@ -67,7 +68,7 @@ namespace WpfApp1
             ChangeAccount cA = new ChangeAccount();
             cA.Show();
             cA.TypeAccount.Text = TypeAccount.Text;
-            cA.listBox.ItemsSource = p.ListarContas();
+            cA.listBox.ItemsSource = p.AllAccount();
         }
     }
 }

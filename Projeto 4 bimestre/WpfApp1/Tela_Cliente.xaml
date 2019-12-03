@@ -13,8 +13,8 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="TypeAccount"/>
-        <TextBlock x:Name="IdAccount"/>
+        <TextBlock x:Name="TypeAccount" Foreground="Transparent"/>
+        <TextBlock x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="18"/>
         <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White" Click="Button_Meus_Dados"/>
         <Button Background="Transparent" Foreground="White" Content="Listar tempo" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="103" BorderBrush="White" Click="Button_ListarTempo"/>
@@ -22,6 +22,6 @@
         <Button Background="Transparent" Foreground="White" Content="Extrato de acesso" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White"/>
         <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="258,204,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="233,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Background="Transparent" Foreground="White" Content="Extrato de compra" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Extrato de compra" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White" Click="Button_ExtratoDeCompra"/>
     </Grid>
 </Window>

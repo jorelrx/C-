@@ -14,7 +14,22 @@ namespace NegocioProgram
 {
     public class NProgram
     {
+        public void InserirTempo(MCliente c, double tempo)
+        {
+            PProgram p = new PProgram();
+            List<MCliente> list = ListarClientes();
+            foreach (MCliente cliente in list)
+                if (c.Id == cliente.Id)
+                {
+                    cliente.Tempo = tempo;
+                }
+            p.SaveCliente(list);
+        }
+
+
+
         /* --------------------------------------------------------------------------------------------------------------- */
+
         public List<MUsuario> AllAccount()
         {
             PProgram p = new PProgram();
@@ -26,13 +41,7 @@ namespace NegocioProgram
             return list;
         }
 
-
-
         /* --------------------------------------------------------------------------------------------------------------- */
-
-
-
-
 
         public List<MUsuario> ListarContas()
         {
@@ -76,27 +85,23 @@ namespace NegocioProgram
             p.SaveContas(cs);
         }*/
 
-
-
-
-
-
-
         public List<MCliente> ListarClientes()
         {
             PProgram p = new PProgram();
             return p.OpenCliente();
         }
+
         public void InserirCliente(MCliente c)
         {
             PProgram p = new PProgram();
-            List<MCliente> cs = p.OpenCliente();
+            List<MCliente> cs = p.OpenCliente();                  
             int m = 0;
-            foreach (MCliente x in cs) if (x.Id > m) m = x.Id;
+            foreach (MUsuario x in AllAccount()) if (x.Id > m) m = x.Id;
             c.Id = m + 1;
             cs.Add(c);
             p.SaveCliente(cs);
         }
+
         public void UpdateCliente(MCliente c)
         {
             PProgram p = new PProgram();
@@ -110,6 +115,7 @@ namespace NegocioProgram
             cs.Add(c);
             p.SaveCliente(cs);
         }
+
         public void DeleteCliente(MCliente c)
         {
             PProgram p = new PProgram();
@@ -135,7 +141,7 @@ namespace NegocioProgram
             PProgram p = new PProgram();
             List<MFuncionario> cs = p.OpenFuncionario();
             int m = 0;
-            foreach (MFuncionario x in cs) if (x.Id > m) m = x.Id;
+            foreach (MUsuario x in AllAccount()) if (x.Id > m) m = x.Id;
             c.Id = m + 1;
             cs.Add(c);
             p.SaveFuncionario(cs);

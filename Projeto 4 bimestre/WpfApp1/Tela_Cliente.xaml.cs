@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ModeloCliente;
 using NegocioProgram;
+using NegocioCliente;
 
 namespace WpfApp1
 {
@@ -41,9 +42,9 @@ namespace WpfApp1
         {
             Meus_Dados Md = new Meus_Dados();
             foreach (MCliente f in p.ListarClientes())
-                if (f.Id == int.Parse(TypeAccount.Text))
+                if (f.Id == int.Parse(IdAccount.Text))
                 {
-                    Md.TypeAccount.Text = "Cliente";
+                    Md.TypeAccount.Text = TypeAccount.Text;
                     Md.IdAccount.Text = f.Id.ToString();
                     Md.nomeConta.Text = f.Nome.ToString();
                     Md.emailConta.Text = f.Email.ToString();
@@ -55,6 +56,18 @@ namespace WpfApp1
         private void Button_ListarTempo(object sender, RoutedEventArgs e)
         {
             foreach (MCliente f in p.ListarClientes()) if (f.Id == int.Parse(IdAccount.Text)) MessageBox.Show(f.Tempo.ToString());
+        }
+
+        private void Button_ExtratoDeCompra(object sender, RoutedEventArgs e)
+        {
+            NCliente c = new NCliente();
+            Extratos_de_Compra a = new Extratos_de_Compra();
+            foreach (MCliente f in p.ListarClientes())
+                if (f.Id == int.Parse(IdAccount.Text))
+                {
+                    a.listBox.ItemsSource = c.ListarCompras(f);
+                    a.Show();
+                }
         }
     }
 }

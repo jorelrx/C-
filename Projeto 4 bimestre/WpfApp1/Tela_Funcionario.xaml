@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Tela_Funcionario" Height="400" Width="350" Foreground="White">
+        Title="Tela_Funcionario" Height="257" Width="350" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,13 +13,13 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="TypeAccount"/>
-        <TextBlock x:Name="IdAccount"/>
+        <TextBlock x:Name="TypeAccount" Foreground="Transparent"/>
+        <TextBlock x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Funcionário" VerticalAlignment="Top" FontSize="18"/>
-        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_Click"/>
-        <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Adcionar cliente" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
-        <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="27,193,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_Meus_Dados"/>
+        <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_PedidoDeTempo"/>
+        <Button Background="Transparent" Foreground="White" Content="Adcionar conta" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_AddConta"/>
+        <Button Background="Transparent" Foreground="White" Content="Gerenciar contas" HorizontalAlignment="Left" Margin="27,193,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_GerenciarConta"/>
         <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,193,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
         <Image HorizontalAlignment="Right" Height="100" Margin="0,10,10,0" VerticalAlignment="Top" Width="100"/>
     </Grid>

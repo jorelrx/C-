@@ -13,10 +13,12 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock x:Name="TypeAccount" Foreground="Transparent"/>
+        <TextBlock x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="Gerenciar contas" VerticalAlignment="Top" FontSize="18"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Center" Height="165" Margin="10,52,10,0" VerticalAlignment="Top" Width="322"/>
-        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Center" Margin="10,227,257,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_AlterarConta"/>
-        <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="257,227,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White"/>
+        <Button Background="Transparent" Foreground="White" Content="Alterar conta" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_AlterarConta"/>
+        <Button Background="Transparent" Foreground="White" Content="Excluir conta" HorizontalAlignment="Center" Margin="0,227,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_ExcluirConta"/>
+        <Button Background="Transparent" Foreground="White" Content="Calcelar" HorizontalAlignment="Left" Margin="257,227,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Cancelar"/>
     </Grid>
 </Window>

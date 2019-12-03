@@ -38,6 +38,7 @@ namespace WpfApp1
                     Tela_Cliente posLogin = new Tela_Cliente();
                     posLogin.Show();
                     posLogin.IdAccount.Text = c.Id.ToString();
+                    posLogin.TypeAccount.Text = "Cliente";
                     this.Close();
                     verificar = true;
                     break;
@@ -49,7 +50,8 @@ namespace WpfApp1
                     {
                         Tela_Administrador tA = new Tela_Administrador();
                         tA.Show();
-                        tA.TypeAccount.Text = f.Id.ToString();
+                        tA.IdAccount.Text = f.Id.ToString();
+                        tA.TypeAccount.Text = "Administrador";
                         this.Close();
                         verificar = true;
                     }
@@ -57,6 +59,8 @@ namespace WpfApp1
                     {
                         Tela_Funcionario tF = new Tela_Funcionario();
                         tF.Show();
+                        tF.IdAccount.Text = f.Id.ToString();
+                        tF.TypeAccount.Text = "Funcionario";
                         this.Close();
                         verificar = true;
                     }

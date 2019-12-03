@@ -17,18 +17,16 @@ namespace NegocioCliente
             MCliente c = new MCliente();
             PComprar_Tempo p = new PComprar_Tempo();
             List<MComprar_Tempo> cs = p.OpenCompras();
-            //int m = 0;
-            //foreach (MComprar_Tempo x in cs) if (x.Id > m) m = x.Id;
-            //compra.Id = c.Id;
-            //compra.Nome = 
             cs.Add(compra);
             p.SaveCompras(cs);
         }
 
-        public List<MComprar_Tempo> ListarCompras()
+        public List<MComprar_Tempo> ListarCompras(MCliente c) //extrato de compras
         {
+            List<MComprar_Tempo> list = new List<MComprar_Tempo>();
             PComprar_Tempo p = new PComprar_Tempo();
-            return p.OpenCompras();
+            foreach (MComprar_Tempo compra in p.OpenCompras()) if (compra.Id == c.Id) list.Add(compra);
+            return list;
         }
     }
 }

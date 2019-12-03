@@ -21,7 +21,7 @@ namespace ModeloComprar_Tempo
         public MComprar_Tempo() { }
         public override string ToString()
         {
-            return $"Id do cliente: {Id}; Nome do cliente: {Nome}; Valor da compra: {ValorCompra};";
+            return $"Id do cliente: {Id}\nNome do cliente: {Nome}\nValor da compra: {ValorCompra}";
         }
     }
 }

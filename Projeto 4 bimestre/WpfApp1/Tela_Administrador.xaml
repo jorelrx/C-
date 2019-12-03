@@ -13,7 +13,8 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock x:Name="TypeAccount" Foreground="Transparent"/>
+        <TextBlock x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,22,0,0" TextWrapping="Wrap" Text="Administrador" VerticalAlignment="Top" FontSize="18"/>
         <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="19,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_Meus_Dados"/>
         <Button Background="Transparent" Foreground="White" Content="Pedidos de tempo" HorizontalAlignment="Left" Margin="19,118,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Click="Button_PedidoDeTempo"/>
