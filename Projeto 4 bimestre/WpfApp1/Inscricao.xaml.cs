@@ -41,13 +41,23 @@ namespace WpfApp1
             {
                 MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
                 p.InserirFuncionario(c);
+                MessageBox.Show("Conta criada com sucesso!");
+                Button_Cancelar(sender, e);
             }
             else
             {
-                MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-                p.InserirCliente(c);
+                bool verificar = false;
+                foreach (MUsuario u in p.AllAccount()) if (u.Nome == nomeConta.Text) verificar = true;
+                if (verificar != true)
+                {
+                    MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                    p.InserirCliente(c);
+                    MessageBox.Show("Conta criada com sucesso!");
+                    Button_Cancelar(sender, e);
+                }
+                else MessageBox.Show("Usuario ja existe!");
+
             }
-            Button_Cancelar(sender, e);
         }
     }
 }

@@ -9,6 +9,7 @@ namespace ModeloComprar_Tempo
     public class MComprar_Tempo
     {
         public int Id { get; set; }
+        public int IdCliente { get; set; }
         public string Nome { get; set; }
         public double ValorCompra { get; set; }
         public bool SituacaoCompra { get; set; }
@@ -21,7 +22,10 @@ namespace ModeloComprar_Tempo
         public MComprar_Tempo() { }
         public override string ToString()
         {
-            return $"Id do cliente: {Id}\nNome do cliente: {Nome}\nValor da compra: {ValorCompra}";
+            string sit;
+            if (SituacaoCompra == false) sit = "Em aberto";
+            else sit = "Finalizado";
+            return $"Id da compra: {Id}\nId do cliente: {IdCliente}\nNome do cliente: {Nome}\nValor da compra: {ValorCompra}\nSituação de compra: {sit}";
         }
     }
 }

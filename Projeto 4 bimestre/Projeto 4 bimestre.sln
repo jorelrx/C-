@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloComprar_Tempo", "Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenciaComprar_Tempo", "PersistenciaComprar_Tempo\PersistenciaComprar_Tempo.csproj", "{27129E30-6582-41E6-AEBD-1D3A368EF6DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegocioComprar_Tempo", "NegocioComprar_Tempo\NegocioComprar_Tempo.csproj", "{8B4FD631-83D9-45B0-95C9-A3ADC5C4C587}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{27129E30-6582-41E6-AEBD-1D3A368EF6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27129E30-6582-41E6-AEBD-1D3A368EF6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27129E30-6582-41E6-AEBD-1D3A368EF6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4FD631-83D9-45B0-95C9-A3ADC5C4C587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4FD631-83D9-45B0-95C9-A3ADC5C4C587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4FD631-83D9-45B0-95C9-A3ADC5C4C587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4FD631-83D9-45B0-95C9-A3ADC5C4C587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
