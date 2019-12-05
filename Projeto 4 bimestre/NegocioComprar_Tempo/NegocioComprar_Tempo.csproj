@@ -53,6 +53,14 @@
       <Project>{cc362d98-b23e-4f98-98c9-2a9e97d58b80}</Project>
       <Name>ModeloComprar_Tempo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModeloUsuario\ModeloUsuario.csproj">
+      <Project>{ee61822c-91fd-4037-b0ad-2399862adc3c}</Project>
+      <Name>ModeloUsuario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NegocioCliente\NegocioCliente.csproj">
+      <Project>{43867eda-9588-4ac0-88e9-fa04c56b5cde}</Project>
+      <Name>NegocioCliente</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NegocioProgram\NegocioProgram.csproj">
       <Project>{4d9d00ca-fcb7-4e03-8f3d-e2b3a8227279}</Project>
       <Name>NegocioProgram</Name>

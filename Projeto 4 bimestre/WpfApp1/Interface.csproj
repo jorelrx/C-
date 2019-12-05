@@ -206,6 +206,10 @@
       <Project>{43867eda-9588-4ac0-88e9-fa04c56b5cde}</Project>
       <Name>NegocioCliente</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NegocioComprar_Tempo\NegocioComprar_Tempo.csproj">
+      <Project>{8b4fd631-83d9-45b0-95c9-a3adc5c4c587}</Project>
+      <Name>NegocioComprar_Tempo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NegocioProgram\NegocioProgram.csproj">
       <Project>{4d9d00ca-fcb7-4e03-8f3d-e2b3a8227279}</Project>
       <Name>NegocioProgram</Name>

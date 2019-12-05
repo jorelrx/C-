@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NegocioComprar_Tempo;
+using ModeloComprar_Tempo;
 
 namespace WpfApp1
 {
@@ -31,7 +33,11 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            NComprar_Tempo compraTempo = new NComprar_Tempo();
+            MComprar_Tempo m = new MComprar_Tempo();
+            List<MComprar_Tempo> list = compraTempo.ListarCompras();
+            MComprar_Tempo compra = compraTempo.ListarCompras()[listBox.SelectedIndex];
+            compraTempo.PermitirCompra(compra);
         }
     }
 }
