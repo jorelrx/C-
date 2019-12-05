@@ -26,7 +26,11 @@ namespace NegocioProgram
             p.SaveCliente(list);
         }
 
-
+        public void SaveClientes(List<MCliente> list)
+        {
+            PProgram p = new PProgram();
+            p.SaveCliente(list);
+        }
 
         /* --------------------------------------------------------------------------------------------------------------- */
 

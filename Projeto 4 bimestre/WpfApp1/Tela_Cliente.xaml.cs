@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using ModeloCliente;
 using NegocioProgram;
 using NegocioCliente;
+using NegocioComprar_Tempo;
 
 namespace WpfApp1
 {
@@ -60,12 +61,12 @@ namespace WpfApp1
 
         private void Button_ExtratoDeCompra(object sender, RoutedEventArgs e)
         {
-            NCliente c = new NCliente();
+            NComprar_Tempo c = new NComprar_Tempo();
             Extratos_de_Compra a = new Extratos_de_Compra();
             foreach (MCliente f in p.ListarClientes())
                 if (f.Id == int.Parse(IdAccount.Text))
                 {
-                    a.listBox.ItemsSource = c.ListarCompras(f);
+                    a.listBox.ItemsSource = c.ListarMinhasCompras(f);
                     a.Show();
                 }
         }

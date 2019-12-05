@@ -15,6 +15,7 @@ using NegocioCliente;
 using ModeloComprar_Tempo;
 using ModeloCliente;
 using NegocioProgram;
+using NegocioComprar_Tempo;
 
 namespace WpfApp1
 {
@@ -28,7 +29,7 @@ namespace WpfApp1
         private void Button_ComprarTempo(object sender, RoutedEventArgs e)
         {
             NProgram p = new NProgram();
-            NCliente c = new NCliente();
+            NComprar_Tempo c = new NComprar_Tempo();
             foreach (MCliente m in p.ListarClientes())
                 if (m.Id == int.Parse(IdAccount.Text))
                 {

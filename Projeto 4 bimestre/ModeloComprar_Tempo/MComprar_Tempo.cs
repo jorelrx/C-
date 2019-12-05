@@ -15,7 +15,7 @@ namespace ModeloComprar_Tempo
         public bool SituacaoCompra { get; set; }
         public MComprar_Tempo(int id, string nome, double valorCompra)
         {
-            Id = id;
+            IdCliente = id;
             Nome = nome;
             ValorCompra = valorCompra;
         }

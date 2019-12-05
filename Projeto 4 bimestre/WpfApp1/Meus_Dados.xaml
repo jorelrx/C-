@@ -13,15 +13,15 @@
                 <GradientStop Color="#FF2252D1" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="IdAccount"/>
-        <TextBlock x:Name="TypeAccount"/>
+        <TextBlock x:Name="TypeAccount" Foreground="Transparent"/>
+        <TextBlock x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Meus dados" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,79,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top"/>
-        <TextBox x:Name="nomeConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nomeConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,134,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
-        <TextBox x:Name="emailConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="emailConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,190,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="senhaConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="senhaConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="206,100,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="214,211,0,0" VerticalAlignment="Top" Width="84" Foreground="White" BorderBrush="White" FontSize="16" Height="23"/>
         <Button Background="Transparent" Content="Alterar dados" HorizontalAlignment="Left" Margin="27,281,0,0" VerticalAlignment="Top" Width="87" Foreground="White" BorderBrush="White" Click="Button_Alterar_Dados"/>

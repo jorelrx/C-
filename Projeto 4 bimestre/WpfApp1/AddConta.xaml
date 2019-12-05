@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="AddConta" Height="450" Width="337.395" Foreground="White">
+        Title="AddConta" Height="365.546" Width="337.395" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -17,17 +17,15 @@
         <TextBlock Width="0" Height="0" x:Name="IdAccount" Foreground="Transparent"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Crie conta" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,105,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top"/>
-        <TextBox x:Name="nomeConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nomeConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,160,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
-        <TextBox x:Name="emailConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="emailConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,216,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="senhaConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="27,269,0,0" TextWrapping="Wrap" Text="Confirmar senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="confSenha" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="214,148,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="220,290,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23" BorderBrush="White"/>
-        <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,360,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White" Click="Button_Cancelar"/>
-        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,360,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_NewAccount"/>
+        <TextBox x:Name="senhaConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="210,126,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="220,241,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23" BorderBrush="White"/>
+        <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,298,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White" Click="Button_Cancelar"/>
+        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,298,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_NewAccount"/>
         <RadioButton Foreground="White" x:Name="cliente" Content="Cliente" HorizontalAlignment="Left" Margin="27,73,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="funcionario" Foreground="White" Content="Funcionário" HorizontalAlignment="Left" Margin="108,73,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="administrador" Foreground="White" Content="Administrador" HorizontalAlignment="Left" Margin="210,73,0,0" VerticalAlignment="Top"/>

@@ -20,11 +20,11 @@
         <RadioButton x:Name="funcionario" Foreground="White" Content="Funcionário" HorizontalAlignment="Left" Margin="108,59,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="administrador" Foreground="White" Content="Administrador" HorizontalAlignment="Left" Margin="210,59,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,79,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top"/>
-        <TextBox x:Name="nomeConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nomeConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,134,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
-        <TextBox x:Name="emailConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="emailConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,190,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="senhaConta" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="senhaConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="204,100,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="220,211,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23" BorderBrush="White"/>
         <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,267,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White" Click="Button_Cancelar"/>

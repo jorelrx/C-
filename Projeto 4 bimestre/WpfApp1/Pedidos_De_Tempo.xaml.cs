@@ -35,9 +35,9 @@ namespace WpfApp1
         {
             NComprar_Tempo compraTempo = new NComprar_Tempo();
             MComprar_Tempo m = new MComprar_Tempo();
-            List<MComprar_Tempo> list = compraTempo.ListarCompras();
             MComprar_Tempo compra = compraTempo.ListarCompras()[listBox.SelectedIndex];
             compraTempo.PermitirCompra(compra);
+            MessageBox.Show("Pedido autorizado!");
         }
     }
 }

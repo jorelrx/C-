@@ -19,7 +19,7 @@
         <Button Background="Transparent" Foreground="White" Content="Meus dados" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White" Click="Button_Meus_Dados"/>
         <Button Background="Transparent" Foreground="White" Content="Listar tempo" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="103" BorderBrush="White" Click="Button_ListarTempo"/>
         <Button Background="Transparent" Foreground="White" Content="Comprar tempo" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White" Click="Button_ComprarTempo"/>
-        <Button Background="Transparent" Foreground="White" Content="Extrato de acesso" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White"/>
+        <!--<Button Background="Transparent" Foreground="White" Content="Extrato de acesso" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White"/>-->
         <Button Background="Transparent" Foreground="White" Content="Sair" HorizontalAlignment="Left" Margin="258,204,0,0" VerticalAlignment="Top" Width="75" BorderBrush="White" Click="Button_Sair"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="233,10,0,0" VerticalAlignment="Top" Width="100"/>
         <Button Background="Transparent" Foreground="White" Content="Extrato de compra" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="104" BorderBrush="White" Click="Button_ExtratoDeCompra"/>
