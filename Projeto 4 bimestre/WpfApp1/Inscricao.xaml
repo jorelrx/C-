@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Inscricao" Height="400" Width="350" Foreground="White">
+        Title="Inscricao" Height="334.426" Width="350" Foreground="White">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -20,12 +20,10 @@
         <TextBox x:Name="emailConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,190,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
         <TextBox x:Name="senhaConta" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="27,243,0,0" TextWrapping="Wrap" Text="Confirmar senha" VerticalAlignment="Top"/>
-        <TextBox x:Name="confSenha" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="23" Margin="27,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="214,122,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="220,264,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23" BorderBrush="White"/>
-        <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,334,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White" Click="Button_Cancelar"/>
-        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,334,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_NewAccount"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="204,100,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Background="Transparent" Content="Inserir foto" HorizontalAlignment="Left" Margin="214,211,0,0" VerticalAlignment="Top" Width="84" Foreground="White" FontSize="16" Height="23" BorderBrush="White"/>
+        <Button Background="Transparent" Content="Calcelar" HorizontalAlignment="Left" Margin="27,258,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White" Click="Button_Cancelar"/>
+        <Button Background="Transparent" Content="Concluir" HorizontalAlignment="Left" Margin="230,258,0,0" VerticalAlignment="Top" Width="74" Foreground="White" BorderBrush="White" Click="Button_NewAccount"/>
 
     </Grid>
 </Window>
