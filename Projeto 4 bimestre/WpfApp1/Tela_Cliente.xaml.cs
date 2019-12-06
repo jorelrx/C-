@@ -56,7 +56,7 @@ namespace WpfApp1
 
         private void Button_ListarTempo(object sender, RoutedEventArgs e)
         {
-            foreach (MCliente f in p.ListarClientes()) if (f.Id == int.Parse(IdAccount.Text)) MessageBox.Show(f.Tempo.ToString());
+            foreach (MCliente f in p.ListarClientes()) if (f.Id == int.Parse(IdAccount.Text)) MessageBox.Show(f.Tempo.ToString()+"Horas");
         }
 
         private void Button_ExtratoDeCompra(object sender, RoutedEventArgs e)

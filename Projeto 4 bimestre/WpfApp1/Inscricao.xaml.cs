@@ -36,28 +36,36 @@ namespace WpfApp1
 
         private void Button_NewAccount(object sender, RoutedEventArgs e)
         {
-            foreach (MUsuario u in p.AllAccount()) if (u.Id > contas) contas = u.Id;
-            if (contas == 0)
+            if (nomeConta.Text == "" || emailConta.Text == "" || senhaConta.Text == "")
             {
-                MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
-                p.InserirFuncionario(c);
-                MessageBox.Show("Conta criada com sucesso!");
-                Button_Cancelar(sender, e);
+                MessageBox.Show("Dados incorretos.\nPor favor insira corretamente!");
             }
             else
             {
-                bool verificar = false;
-                foreach (MUsuario u in p.AllAccount()) if (u.Nome == nomeConta.Text) verificar = true;
-                if (verificar != true)
+                foreach (MUsuario u in p.AllAccount()) if (u.Id > contas) contas = u.Id;
+                if (contas == 0)
                 {
-                    MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
-                    p.InserirCliente(c);
+                    MFuncionario c = new MFuncionario(nomeConta.Text, senhaConta.Text, emailConta.Text, true);
+                    p.InserirFuncionario(c);
                     MessageBox.Show("Conta criada com sucesso!");
                     Button_Cancelar(sender, e);
                 }
-                else MessageBox.Show("Usuario ja existe!");
-
+                else
+                {
+                    bool verificar = false;
+                    foreach (MUsuario u in p.AllAccount()) if (u.Nome == nomeConta.Text) verificar = true;
+                    if (verificar != true)
+                    {
+                        MCliente c = new MCliente(nomeConta.Text, senhaConta.Text, emailConta.Text);
+                        p.InserirCliente(c);
+                        MessageBox.Show("Conta criada com sucesso!");
+                        Button_Cancelar(sender, e);
+                    }
+                    else MessageBox.Show("Usuario ja existe!");
+                }
             }
+
+            
         }
     }
 }
